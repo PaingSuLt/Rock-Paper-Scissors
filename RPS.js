@@ -31,33 +31,65 @@ function playRound(humanChoice, computerChoice) {
     if(computerChoice==="ROCK" && humanChoice==="PAPER") {
         alert(`You:${humanChoice}
             Computer:${computerChoice}`)
-            humanScore += 1;
+        humanScore += 1;
+        alert(`Your score:${humanScore}
+            Computer score:${computerScore}`)
+
     }else if(computerChoice==="PAPER" && humanChoice==="SCISSORS") {
         alert(`You:${humanChoice}
             Computer:${computerChoice}`)
-            humanScore += 1;
+        humanScore += 1;
+        alert(`Your score:${humanScore}
+            Computer score:${computerScore}`)
     }else if(computerChoice==="SCISSORS" && humanChoice==="ROCK") {
         alert(`You:${humanChoice}
             Computer:${computerChoice}`)
-            humanScore += 1;
+        humanScore += 1;
+        alert(`Your score:${humanScore}
+            Computer score:${computerScore}`)
     }else if(computerChoice==="SCISSORS" && humanChoice==="PAPER") {
         alert(`You:${humanChoice}
             Computer:${computerChoice}`)
-            computerScore += 1;
+        computerScore += 1;
+        alert(`Your score:${humanScore}
+            Computer score:${computerScore}`)
     }else if(computerChoice==="PAPER" && humanChoice==="ROCK") {
         alert(`You:${humanChoice}
             Computer:${computerChoice}`)
-            computerScore += 1;
+        computerScore += 1;
+        alert(`Your score:${humanScore}
+            Computer score:${computerScore}`)
     }else if(computerChoice==="ROCK" && humanChoice==="SCISSORS") {
         alert(`You:${humanChoice}
             Computer:${computerChoice}`)
-            computerScore += 1;
+        computerScore += 1;
+        alert(`Your score:${humanScore}
+            Computer score:${computerScore}`)
     }else {
         alert(`DRAW!`)
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+function playGame() {
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
 
-playRound(humanSelection, computerSelection);
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+}
+
+playGame();
