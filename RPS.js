@@ -30,7 +30,7 @@ function exitFunction() {
     if(humanScore === 5 || computerScore === 5) {
 
         if (humanScore === 5) {
-        displayResult.textContent = "Sugoi MaMa itsumo Win!!!";
+        displayResult.textContent = "Sugoi MaMa itsumo Win!!!🤗";
         }else if (computerScore === 5) {
         displayResult.textContent = "MaMa Lost against AI!!! BOOOOO🤪";
         }
@@ -53,7 +53,7 @@ function playGame() {
 
     humanScore = 0;
     computerScore = 0;
-    displayScore.textContent = 'SuLatt EtoneMa having fun? play as many times as you want my Queen';
+    displayScore.textContent = 'SuLatt EtoneMa having fun💩? play as many times as you want my Queen😘';
     displayResult.textContent = "";
     suggestion.textContent = "";
     
@@ -115,6 +115,8 @@ function userIsRock() {
 
 function userIsPaper() {
 
+    exitFunction();
+
     humanChoice = "PAPER";
     computerChoice = getComputerChoice();
     if(humanChoice === computerChoice) {
@@ -132,6 +134,8 @@ function userIsPaper() {
 
 
 function userIsScissors() {
+
+    exitFunction();
 
     humanChoice = "SCISSORS";
     computerChoice = getComputerChoice();
