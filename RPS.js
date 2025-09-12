@@ -92,4 +92,4 @@ function playGame() {
     playRound(humanSelection, computerSelection);
 }
 
-playGame();
+playGame(); // done
