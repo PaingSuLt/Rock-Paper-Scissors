@@ -1,0 +1,13 @@
+.buttons {
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#result, #score, #suggestion {
+    display: flex;
+    justify-content: center;
+}
+
