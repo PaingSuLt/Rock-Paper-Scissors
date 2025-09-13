@@ -35,7 +35,7 @@ function exitFunction() {
         displayResult.textContent = "MaMa Lost against AI!!! BOOOOO🤪";
         }
     
-    suggestion.textContent = "U can keep playing or press Play to reset scores";
+    suggestion.textContent = "U can keep playing or press Reset to reset scores";
 
     return true;
 
